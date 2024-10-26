@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('./components/background-image.png') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+.home-container, .login-container, .signup-container, .contact-container, .service-container, .dashboard-container {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent background to make text visible */
+  margin: 100px auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.nav a {
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}

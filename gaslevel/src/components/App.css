@@ -1,0 +1,108 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('./gas.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: white;
+}
+
+/* Navbar Styling */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.8); /* Semi-transparent background */
+  color: white;
+  padding: 10px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  font-size: 1.5 em;
+  font-weight: bold;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+/* Containers */
+.home-container, .login-container, .signup-container, .contact-container, .service-container, .dashboard-container {
+  text-align: center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin: 100px auto;
+  width: 50%;
+  border-radius: 10px;
+}
+
+/* Headings */
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Inputs and Buttons */
+input, button {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Additional Navigation Styles */
+.nav a {
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* Gauge Container */
+.gauge-container {
+  position: relative;
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Align children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: center; /* Center children vertically */
+}
+
+.gas-level-text {
+  font-size: 20px;
+  margin-top: -50px; /* Adjust this value as needed to move the text closer to the chart */
+  z-index: 1; /* Ensure it's on top of the chart */
+}
+
+/* Body padding to prevent overlap with the fixed navbar */
+body {
+  padding-top: 60px; /* Prevent content overlap with navbar */
+}
+
